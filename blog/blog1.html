@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Week 1-GSoC 2018</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Ayush Shridhar</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Blog Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('onnx.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>GSoC 2018: My Project</h1>
+              <h2 class="subheading">Implementing an ONNX backend in Julia</h2>
+              <span class="meta">Posted by
+                <a href="https://github.com/ayush1999">Ayush Shridhar</a>
+                on May 13, 2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+<p>Machine learning is revolutionizing the entire tech industry. Ever since the advent of
+  Deep Learning, we've seen extraordinary
+ changes in the field of Computer Vision and Natural Language Processing. Deep learning has absolutely dominated computer
+vision over the last few years, achieving top scores on many tasks and their related competitions.
+People have doubtlessly
+ noticed quantum leaps in the quality of a wide range of everyday technologies. 
+             
+            </p>
+
+            <p>But, here's the problem. There are many Deep Learning libraries available for implementing deep and complex neural networks. TensorFlow, CNTK, PyTorch, Caffe, MXNet, 
+              CoreML. Each framework has a functioning of its own. Some use Computation graphs, some are completely
+ dynamic. So here's the question engineers have been trying to solve:
+<br>
+<b> Is it possible to develop a common format that helps us in
+                running a model made using framework X into another framework Y? </b>
+            </p>
+
+            <p>The answer to that question is Yes, it is possible to do so. It is possible to train a model completely in Caffe and then load and run it in PyTorch. The reason behind this is <a href="https://onnx.ai">onnx</a>. 
+              ONNX is a framework for interchangeable machine learning models. It uses Google's Protocol Buffers to serialize models into a common onnx format, and a set of 
+              specifications to read it into another framework.
+            </p>
+
+            <p>Although ONNX is currently in its development stage, it shows great promise. It has earned kudos from various data scientists and Machine 
+              learning practitioners alike. It makes transfer learning cross platform, which is amazing. 
+            </p>
+
+            <h2 class="section-heading">My Project</h2>
+<p> There was a time when I used to use Python for all data science related work. Now, I can easily say that I'm drifting towards Julia.
+  Julia is slowly becoming the mainstream language used by data scientists, economists, software engineers alike. This comes as no surprise, seeing how easy and dynamic the language is,
+  the wonders that even a few lines of Julia code can do (yes, fewer than Python) even while achieving amazing results on the clock.   
+  These qualities make it a perfect language for Machine Learning and Data Science purposes. 
+</p>
+
+<p>For those who don't know,
+  <a href="http://fluxml.ai/"> Flux</a> is a purely Julian ML framework. It was written by one of my mentor,
+  <a href="https://github.com/MikeInnes">Mike Innes</a>. It provides an elegant, easy-to-hack approach for implementing Deep learning
+  models. Coding networks in Flux is as simple as writing mathematical equations. Here is a little taste of a neural network in Flux: <br>
+<br>
+  <i><pre>model = Chain(Dense(10, 5, σ),
+                      Dense(5, 2),
+                      softmax)
+</pre></i><br><br>
+Yes, that's it. A two hidden layer neural network, implemented in just one line!<br>
+</p>
+  My project revolves around developing an ONNX backend for the Julia Flux framework. This would help us
+<br><br><b>
+  1. Load diverse models into Flux.<br>
+  2. Help in growing Flux as a complete framework, by incorporating functionalities from other frameworks.<br>
+  3. Object detection in Julia, something I'm really excited about. </b><br>
+
+            <h2 class="section-heading">Objectives for the next two weeks:</h2>
+
+            <p>As the official coding period begins, here are the targets I'd like to achieve in the next two weeks (along with the troubles I'm most likely
+              to face) : <br><br>
+              <b>1.</b> Continue work on the operators (ops.jl) for the ONNX models. This will involve reading the <a href="https://github.com/onnx/onnx/blob/master/docs/Operators.md"> docs for the operators</a> and writing the DataFlow code for them.<br><br>
+              <b>2.</b> Try to load most of the major <a href="https://github.com/onnx/models">ONNX models</a> in Flux. The biggest problem here is that ONNX is itself currently under development.
+              As a result, most of the ONNX models hosted on its github repo aren't perfect. The repo is updated every week and I need to keep track of all changes the ONNX contributors 
+              make in the models.<br><br>
+              <b>3.</b> Writing the node/operator tests for these operators. ONNX provides a set of proto files for testing every backend on. For writing these tests, I (thankfully) have a few options:
+                    To write them directly in Julia, reading each proto model at a time, or to wrap ONNX.jl with python and use PyJulia to run the Python-API generated tests.
+
+
+            </p>
+            <h2 class="section-heading">Conclusion </h2>
+            <p>All in all, the next two weeks are going to be somewhat like:
+              <i><pre>
+                while(model.status() == "not running")
+                    code();
+                    test();
+                    debug();
+                end
+              </pre></i><br><br>
+                Looking forward to tackling these challenges! (Fingers crossed!) :)
+            </p>
+<!--
+            <a href="#">
+              <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+            </a>
+            <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+
+            <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+
+            <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+
+            <p>Placeholder text by
+              <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
+              <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+           -->
+            </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+<a href="https://twitter.com/ayuSHridhar">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+<a href="https://www.linkedin.com/in/ayush-shridhar-23480b130/">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+<a href="https://github.com/ayush1999">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Ayush Shridhar</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>

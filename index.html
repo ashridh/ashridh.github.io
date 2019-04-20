@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Hassan Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<a href="http://medium.com/@ayush1999/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-medium"></i>
+					</span>
+				</a>
+				<a href="http://github.com/ayush1999" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://twitter.com/ayuSHridhar" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-twitter"></i>
+					</span>
+				</a>
+			</div>
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/ayush.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					Hey, I'm Ayush. I'm a third year Computer Science undergraduate from IIIT-Bh. I spend most of my time hacking
+					on open source projects, watching football, reading anything I find interesting on the internet and watching
+					random stuff on YouTube. <br><br>
+
+					I'm fascinated by various aspects of Computers, but I find the field of Machine learning to be really intriguing
+					in particular. Do go through my GitHub profile for more projects. <br><br>
+
+					In the past, I've been a Google Summer of Code student with The Julia Language, working on the Flux machine
+					learning ecosystem. You can find more about my project <a href="https://summerofcode.withgoogle.com/archive/2018/projects/6242927298740224/">here</a>.<br><br>
+
+					I love deep conversations with interesting people. So, if you have any interesting ideas in mind and would love
+					to share them, please don't hesitate!
+				</p>
+			</div>
+		</section>
+
+		<section id="blog" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Blogs</h3>
+				</div>
+				<div class="social-container columns">
+					<p><br>  Click <a href="blog/index.html">here</a> for GSoC'18 related blogs.  </p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Projects (To be updated soon)</h3>
+				</div>
+
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/onnx.png" alt="Image">
+									</figure>
+								</div>
+								<div>
+									<p>
+										<a href="https://github.com/FluxML/ONNX.jl">ONNX.jl</a> : A Julia package to load and run high quality pretrained models
+										in Flux. Simply  <i>]add ONNX</i>  from your Julia REPL and import high quality
+										models trained in TensorFlow, PyTorch, CoreML into Flux!
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/keras.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>
+									<p>
+										<a href="https://github.com/ayush1999/Keras.jl">Keras.jl</a> : Run pretrained Keras models on a Flux backend! (Works for Flux0.6 and Julia0.6
+										for now). Support for Julia1.0 coming soon!
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social -->
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Let's Socialize</h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/ayush-shridhar-23480b130/"><img class="" src="assets/img/linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.facebook.com/ayush.shridhar.is.batman?ref=br_rs"><img class="" src="assets/img/facebook.png"></a>
+					</div>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://github.com/ayush1999"><img class="" src="assets/img/github.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="mailto:ayush.shridhar1999@gmail.com"><img class="" src="assets/img/gmail.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Scripts  -->
+		<script src="controller.js"></script>
+	</body>
+</html>
