@@ -3,173 +3,150 @@
 <head>
 	<title>Portfolio</title>
 	<!-- css files -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Hassan Ali">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<meta name="author" content="Ayush Shridhar">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+<script>
+</script>
 	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<a href="http://medium.com/@ayush1999/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-medium"></i>
-					</span>
-				</a>
-				<a href="http://github.com/ayush1999" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<a href="https://twitter.com/ayuSHridhar" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-twitter"></i>
-					</span>
-				</a>
+		<!-- NAVBAR -->
+		<div class="container">
+		<nav class="navbar navbar-expand-sm">
+			<div class="move">
+				<a href ="https://medium.com/@ayush1999/" class ="fa fa-medium nav"></a>
+				<a href ='https://github.com/ayush1999' class ="fa fa-github nav"></a>
+				<a href = 'https://twitter.com/ayuSHridhar' class ="fa fa-twitter nav"></a>
 			</div>
-
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">   
+					<i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+				</span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				  <a class="nav-link cus" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link cus" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link cus" href= '#social'>Social</a>
+				</li>
+			  </ul>
 			</div>
-
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-
-		<!-- About Me -->
-		<section id="about" class="section section-1">
-			<div class="container has-text-centered">
-				<!-- Source: https://flic.kr/p/pAZBNK -->
-				<img class="avatar" src="assets/img/ayush.png">
-			</div>
-			<div class="container"></br>
-				<p class="intro">
-					Hey, I'm Ayush. I'm a third year Computer Science undergraduate from IIIT-Bh. I spend most of my time hacking
-					on open source projects, watching football, reading anything I find interesting on the internet and watching
-					random stuff on YouTube. <br><br>
-
-					I'm fascinated by various aspects of Computers, but I find the field of Machine learning to be really intriguing
-					in particular. Do go through my GitHub profile for more projects. <br><br>
-
-					In the past, I've been a Google Summer of Code student with The Julia Language, working on the Flux machine
-					learning ecosystem. You can find more about my project <a href="https://summerofcode.withgoogle.com/archive/2018/projects/6242927298740224/">here</a>.<br><br>
-
-					I love deep conversations with interesting people. So, if you have any interesting ideas in mind and would love
-					to share them, please don't hesitate!
-				</p>
-			</div>
-		</section>
-
-		<section id="blog" class="section section-3">
+		  </nav>
+		</div>
+		<!-- END NAVBAR  -->
+		<!-- START OF ABOUT  -->
+		<div class="container-fluid main1" id = 'about'>
 			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Blogs</h3>
+				<div class="row">
+					<div class="col-12 text-center mt-5">
+						<a href="./assets/img/ayush.png"><img src="./assets/img/ayush.png" class="img-responsive img-fluid round" height="300" width="300"></a>
+					</div>
 				</div>
-				<div class="social-container columns">
-					<p><br>  Click <a href="blog/index.html">here</a> for GSoC'18 related blogs.  </p>
+				<div class="row mt-5">
+					<div class="col-12 mb-5">
+						<div class="intro">
+							<p class="head">
+								Hey, I'm Ayush. I'm a fourth year Computer Science undergraduate from IIIT-Bh. I spend most of my time hacking
+								on open source projects, watching football, reading anything I find interesting on the internet and watching
+								random stuff on YouTube. <br><br>
+			
+								I'm fascinated by various aspects of Computers, but I find the field of Machine learning to be really intriguing
+								in particular. Do go through my GitHub profile for more projects. <br><br>
+			
+								In the past, I've been a Google Summer of Code student with The Julia Language, working on the Flux machine
+								learning ecosystem. You can find more about my project <a target = "_blank" href="https://summerofcode.withgoogle.com/archive/2018/projects/6242927298740224/">here</a>.<br><br>
+			
+								I love deep conversations with interesting people. So, if you have any interesting ideas in mind and would love
+								to share them, please don't hesitate!
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section>
-
-		<!-- Projects -->
-		<section id="blog" class="section section-3">
+		</div>
+		<!-- END ABOUT  -->
+		<!-- START PROJECTS  -->
+		<div class="container-fluid main2">
 			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Timeline:</h3>
+				<div class="row">
+					<div class="col-12 mt-5 text-left">
+						<p class="head blog">Blogs :</p>
+					</div>
 				</div>
-				<div class="social-container columns">
-					<p>
-						<ul>
-							<li>September'19: It's official: I'll most probably be visiting the Australian National University
-								for 6 months, starting Dec'19, working on a test suite for driverless car research. Exciting times
-								indeed!<br><br>
-							</li>
-							<li>September'19: Successfully completed GSoC'19 with Mozilla. I've published a brief blog about my work on medium :
-								<a href="https://medium.com/@ayush1999/gsoc19-mozilla-a185b66d9564">here</a>.<br><br>
-							</li>
-							<li>August'19 : Back in India! Heading to my university at the moment. It was a great experience
-								working in UCL. I hope to continue contributing as and when I get time.<br><br></li>
-							<li>May'19: Very rarely do I have more than one good news in a single month. I guess this is one of those rare
-								occasions. I got my talk selected in JuliaCon'19 in University of Maryland, Baltimore. It's great to get
-								this opportunity to showcase my work to a wide audience. Hopefully my visa gets approved (which is doubtful,
-								since I'll be applying from UK,which isn't my home country.). Let's see how this goes. <br><br>
-							</li>
-							<li>
-								May'19 : Some good news: I got my Google Summer of Code project selected. This time, I'll be working under the 
-								Mozilla organization on the <i>bugbug</i> project. I'll be tough managing it with my project in UCL, let's 
-								see how it goes! (fingers crossed!) <br><br>
-							</li>
-							<li>April'19 : It's official. I'll be joining University College London (UCL) department of Statistical Science
-								during the summer of 2019 as a visiting researcher. Looking forward to this new adventure in life!<br><br>
-							</li>
-							<li>October'18 : Attending PyCon'18 India in Hyderabad. Excited to meet all awesome people!<br><br>
-							</li>
-							<li>
-								August'18 : Attending JuliaCon'18 in UCL, London! This'll be the first I'll travel alone outside my country!
-								It'll be exciting to meet all the cool people I've been working with over the past 3 months.<br><br>
-							</li>
-							<li>
-								July'18 : Got a chance to visit the Google office in Mumbai, India for an event. Had a great time meeting fellow
-								GSoC students (among others) and interacting with interns and cloud engineers at Google. Special thanks to the Google team
-								for organizing this.<br><br>
-							</li>
-							<li>
-								April'18 : Finally some good news after a series of dissappointing end semester exmas. I got selected into Google
-								Summer of Code'18. I'll be working under <i>The Julia Language, NumFOCUS</i>, on <i>Model import and export for 
-								Flux</i>. It's going to be a great opportunity to learn from the community.<br><br>
-							</li>
-							<li>
-								August'16 : I'll start my bachelor's degree in Computer Science from International Institute of Information Technology,
-								Bhubaneswar. This is a big step in my life, Kinda excited but anxious at the same time. Let's see what this holds for me.
-							</li>
-						</ul>
-						
-					
-					</p>
+				<div class="row mt-4">
+					<div class="col-12 text-left">
+						<p class="head"> ---- Click <a href="blog/index.html">here</a> for GSoC'18 related blogs.</p>
+					</div>
 				</div>
+				<div class="row">
+					<div class="col-12 mt-4 text-left">
+						<p class="head blog">Timeline :</p>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-12 text-left">
+						<p class="head">
+							- September'19: It's official: I'll most probably be visiting the Australian National University
+							for 6 months, starting Dec'19, working on a test suite for driverless car research. Exciting times
+							indeed!<br><br>
+							- September'19: Successfully completed GSoC'19 with Mozilla. I've published a brief blog about my work on medium :
+							<a target = "_blank" href="https://medium.com/@ayush1999/gsoc19-mozilla-a185b66d9564">here</a>.<br><br>
+							- August'19 : Back in India! Heading to my university at the moment. It was a great experience
+							working in UCL. I hope to continue contributing as and when I get time.<br><br>
+							- May'19: Very rarely do I have more than one good news in a single month. I guess this is one of those rare
+							occasions. I got my talk selected in JuliaCon'19 in University of Maryland, Baltimore. It's great to get
+							this opportunity to showcase my work to a wide audience. Hopefully my visa gets approved (which is doubtful,
+							since I'll be applying from UK,which isn't my home country.). Let's see how this goes. <br><br>
+							- May'19 : Some good news: I got my Google Summer of Code project selected. This time, I'll be working under the 
+							Mozilla organization on the <i>bugbug</i> project. I'll be tough managing it with my project in UCL, let's 
+							see how it goes! (fingers crossed!) <br><br>
+							- April'19 : It's official. I'll be joining University College London (UCL) department of Statistical Science
+							during the summer of 2019 as a visiting researcher. Looking forward to this new adventure in life!<br><br>
+							- October'18 : Attending PyCon'18 India in Hyderabad. Excited to meet all awesome people!<br><br>
+							- August'18 : Attending JuliaCon'18 in UCL, London! This'll be the first I'll travel alone outside my country!
+							It'll be exciting to meet all the cool people I've been working with over the past 3 months.<br><br>
+							- July'18 : Got a chance to visit the Google office in Mumbai, India for an event. Had a great time meeting fellow
+							GSoC students (among others) and interacting with interns and cloud engineers at Google. Special thanks to the Google team
+							for organizing this.<br><br>
+							- April'18 : Finally some good news after a series of dissappointing end semester exmas. I got selected into Google
+							Summer of Code'18. I'll be working under <i>The Julia Language, NumFOCUS</i>, on <i>Model import and export for 
+							Flux</i>. It's going to be a great opportunity to learn from the community.<br><br>
+							- August'16 : I'll start my bachelor's degree in Computer Science from International Institute of Information Technology,
+							Bhubaneswar. This is a big step in my life, Kinda excited but anxious at the same time. Let's see what this holds for me.
+						</p>
+					</div>
+				</div>
+
+				<!-- END PROJECTS  -->
+
+				<!-- START SOCIALIZE  -->
+				<div class="row" id = 'social'>
+					<div class="col-12 mt-5 mb-5 text-left">
+						<p class="head blog media">Let's Socialize :</p>
+					</div>
+				</div>
+				<div class="row mt-3">
+					<div class="col-12 text-center">
+						<a target="_blank" href="https://www.linkedin.com/in/ayush-shridhar-23480b130/" class="fa fa-linkedin"></a>
+						<a target="_blank" href="https://www.facebook.com/ayush.shridhar.is.batman?ref=br_rs" class="fa fa-facebook"></a>
+						<a target="_blank" href="https://github.com/ayush-1506" class="fa fa-github"></a>
+						<a target="_blank" href="mailto:ayush.shridhar1999@gmail.com" class="fa fa-google"></a>
+					</div>
+				</div>
+
+				<!-- END SOCIALIZE  -->
 			</div>
-		</section>
-
-		<!-- Social -->
-		<section id="social" class="section section-3">
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Let's Socialize</h3>
-				</div>
-				<div class="social-container columns">
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://www.linkedin.com/in/ayush-shridhar-23480b130/"><img class="" src="assets/img/linkedin.png"></a>
-					</div>
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://www.facebook.com/ayush.shridhar.is.batman?ref=br_rs"><img class="" src="assets/img/facebook.png"></a>
-					</div>
-				</div>
-				<div class="social-container columns">
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="https://github.com/ayush1999"><img class="" src="assets/img/github.png"></a>
-					</div>
-					<div class="column is-6 has-text-centered">
-						<a target="_blank" href="mailto:ayush.shridhar1999@gmail.com"><img class="" src="assets/img/gmail.png"></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Scripts  -->
-		<script src="controller.js"></script>
+		</div>
 	</body>
 </html>
