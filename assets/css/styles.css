@@ -60,11 +60,21 @@ a.cus:hover{
 	opacity: 1;
 }
 nav{
-	height: 80px;
+	height: 60px;
 	border-bottom: 2px solid #0E282E;
 }
 img:hover{
 	box-shadow: 0 4px 50px 0 rgba(255, 0, 188, 0.2), 0 6px 20px 0 rgba(255, 0, 188, 0.19);
+}
+.fa-facebook:hover{
+	color: #3B5998;
+}
+a.new:hover{
+	color: black;
+}
+.fa-google:hover{
+	color:#FF4500;
+	opacity: 0.9;
 }
 @media screen and (max-width : 540px)
 {
@@ -81,12 +91,18 @@ img:hover{
 		padding: 10px;
 	}
 }
-@media screen and (max-width : 570px)
+@media screen and (max-width : 575px)
 {
 	a.nav{
 		padding:6px;
 	}
 	i.fa{
 		padding: 0px;
+	}
+	div.main1{
+		margin-top: 6.3%;
+	}
+	a.move{
+		margin-top: -5px;
 	}
 }
