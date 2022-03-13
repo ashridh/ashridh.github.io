@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/ayushridhar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ayush-1506.github.io
+  * I am ayushridhar (https://keybase.io/ayushridhar) on keybase.
+  * I have a public key with fingerprint 01EF C377 8A6F 6A16 3C36  C094 0468 60FA 7D83 BC8C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101808b7acf487aa6230a9c977918cefb348f2317bc3ce031bbfdc809c23e2cfc0a0a",
+      "fingerprint": "01efc3778a6f6a163c36c094046860fa7d83bc8c",
+      "host": "keybase.io",
+      "key_id": "046860fa7d83bc8c",
+      "kid": "0101808b7acf487aa6230a9c977918cefb348f2317bc3ce031bbfdc809c23e2cfc0a0a",
+      "uid": "b857eeec085542e1bb65f42cedd1db19",
+      "username": "ayushridhar"
+    },
+    "service": {
+      "hostname": "ayush-1506.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1647152967,
+  "expire_in": 157680000,
+  "prev": "ca4a849928d8299e177220cf3ac21186f1ef8c76adaf209c8d0230bb77b7e34c",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJfSBRBHMdP66SuNKlALYhY8CVUdnb3dmavsEgsqV4iKbDsmJmdvdvU
+23N37+pSMcropZIiA8kkBAPtL1GZQVBiSflSEakk5OWDFgRJIIVFzVpB0GvzMszM
+5/ud3+87M5i9wBfIyPlx4cqZsSElY/hRV8JHilu3NgjE0lNCqEGoYfMTq9WZ44Zr
+TF0ICSIQARIRgZgaCoIYq5IsYo1qEGoAUWYQWUGGJANIqEyZKANCDJ0iUaOSzCRq
+UBGLWCgSDDMWYXbcNmPuvC0zqAwhwqqhYqDKVFapqCmioiJVNDDUkUwoolwYtRxP
+wYsj2GElpsX3+CL8q7x/+f9cd2LejqAgZIxREQWDisQ4rAYNRaJM14FOgOaBDrNj
+uI5xGqcSTtQ29Si2haYigR8kTcq8bL1m/oaKQVBUSyKmG02QX63Fbcu1qFXLiajr
+xp2Q5+Cm4p7kICPh32ZhYsZ0HilXJJntmFZMCAFOUtf03IGqQBCUNBUWCexQ3LRZ
+2PSIIFSRyId3D0tyS4oVjBRNk5COJE1jAEJJEqkhYyoBgFSDPxSiUMU6NiQeDtJF
+HiQhEBLIZMUL3GH1MUsIKbxMHOGWjhmJYTdhM6Fp4OG+hb6MgC/Ln+l9NV9gce6f
+D5g7vch3Ovixd0+Z/9a7SHrLV3xq2ct0vK26bk35aGNe5azVev5z2k48flI7mF03
+dHVFz+aqJQ3nN97QI+6HTzN7e2eKbxg58ZsTD5ZaBe23/WZnZsGL59/qlh6tuHk3
+MnG8Qx9o7Ng2FW0caZs+B41Lb/0hf99FeG7vWHnv8yPfhyc3FM+ub5k59qU8VVq1
+f7z70InUpl1Px3YEsrLOnuzpLl256vqp+g7r2eHsN6cP9IePdr6nt9tL0i3h5c05
+d3T5Zd9IWWFrZ8W68Z3J1V1nyi6vbQtVFC4DeYM/pIrt+fnpqRZYv7sWju56Hdjx
+qirVeC/Zsqa/emflZHPu/Wtzc4WZIJT3EznMROU=
+=MH9B
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ayushridhar
+
+==================================================================
