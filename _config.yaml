@@ -3,3 +3,4 @@ title: The title of your site
 description: A short description of your site's purpose
 google_analytics: G-M4Y4RXQNPE
 include: [".well-known"]
+permalink: .well-known/keybase.txt
