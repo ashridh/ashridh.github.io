@@ -211,8 +211,14 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
+<<<<<<< HEAD
     minitest (5.16.3)
     nokogiri (1.13.9)
+=======
+    minitest (5.14.2)
+    multipart-post (2.1.1)
+    nokogiri (1.13.4)
+>>>>>>> 78433d8b9d8aa3e49ddf2b754202f49a53a11737
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     octokit (4.25.1)
