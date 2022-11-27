@@ -2,7 +2,7 @@
 
 I'm Ayush - a MS by research student in Purdue University, where my work focuses on Cloud-native Machine Learning. Prior to this, I spent 1.5 years at [Skit.AI](https://skit.ai) (previously Vernacular.AI) as a ML Research Engineer, working on speech and text technologies.
 
-I love dabbling in ML R&D, Software Engineering, Algorithms and System Design. To get in touch, please sent me an email at:
+I love dabbling in ML R&D, Software Engineering, Algorithms and System Design. To get in touch, please send me an email at:
 
 {first_name}.{last_name}1506@gmail.com.
 
