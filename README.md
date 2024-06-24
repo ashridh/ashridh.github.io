@@ -1,4 +1,5 @@
 # Hello!
+[Update June'24: Started new role as SWE at Google]
 
 I'm Ayush - a MS by research student in Purdue University, where my work focuses on Cloud-native Machine Learning. Prior to this, I spent 1.5 years at [Skit.AI](https://skit.ai) (previously Vernacular.AI) as a ML Research Engineer, working on speech and text technologies.
 
