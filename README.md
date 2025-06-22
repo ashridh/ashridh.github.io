@@ -11,9 +11,3 @@ My CV is available [here](https://drive.google.com/file/d/1ZgxIvFbqhA-daNnBXPhN-
 
 ## Online Existence
 Please look at my socials on Keybase: [Ayush's Keybase](https://keybase.io/ayushridhar)
-
-## Other controversial takes
-
-Vim >> Emacs (I now use VSCode with Vim bindings)
-
-Tabs >> Spaces
